@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'mochain';
+	src: url('../fonts/mochain-bf64f036e4a7ea4-webfont.woff2') format('woff2'),
+		 url('../fonts/mochain-bf64f036e4a7ea4-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// -----------------------------------------------------------------------------
+//! SIZING
+// -----------------------------------------------------------------------------
+
+html {
+	font-size: 62.5%;
+}
+ 
+body {
+	font-size: 1.6rem;
+	font-family: $font;
+	color: $color-body;
+	background: #eeede9;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-variant-ligatures: normal;
+	padding: 24px;
+	@include min( 480px ) {
+		padding: 48px;
+	}
+	@include min( 768px ) {
+		padding: 80px;
+	}
+}
+
+

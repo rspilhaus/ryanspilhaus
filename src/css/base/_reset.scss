@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+//! RESET
+// -----------------------------------------------------------------------------
+
+html, body,
+header, footer,
+h1, h2, h3, h4, h5, h6, hr, p,
+ul, ol, li, img,
+fieldset, input, textarea, select{ 
+	margin: 0; 
+	padding: 0; 
+}
+
+html, body { 
+	min-height: 100%; 
+}
+
+body {
+	-webkit-text-size-adjust: none; 
+}
+
+main, article, section, aside {
+	display: block;
+}
+
+:focus { 
+	outline: none; 
+}
+
+// Ditch the borders
+a img, button, input, textarea { border: 0; }	
+
+// Images and Embeds
+img, object, embed { max-width: 100%; height: auto; }
+img { -ms-interpolation-mode: bicubic; }
+#map_canvas img, .map_canvas img { max-width: none !important; }
+iframe { border: 0; }
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+// Border-box all of the things
+html { 
+	box-sizing: border-box; 
+	
+	* {
+		box-sizing: inherit;
+	}
+	
+	:before,
+	:after {
+		box-sizing: inherit;
+	}
+}
