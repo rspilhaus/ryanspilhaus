@@ -4,7 +4,15 @@
 		 url('../fonts/mochain-bf64f036e4a7ea4-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-}
+ }
+
+@font-face {
+	font-family: 'Inclusive Sans';
+	src: url('../fonts/inclusivesans-regular-webfont.woff2') format('woff2'),
+		 url('../fonts/inclusivesans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
 
 
 // -----------------------------------------------------------------------------
